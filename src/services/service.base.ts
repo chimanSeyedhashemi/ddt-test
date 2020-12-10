@@ -89,9 +89,6 @@ export abstract class BaseService {
           | IAPI_Response<IToken>
           | undefined = await this.getTokenfromServer(authObj).catch(
           (error) => {
-            if (error.response.data.msg === "invalid_username") {
-              error.response.data["msg_ui"] = "login_again";
-            }
             return new Promise((resolve, reject) => {
               reject(error);
             });
