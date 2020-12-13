@@ -1,0 +1,15 @@
+$background-message-box:rgb(231, 231, 231);
+
+.todo-wrapper{
+    overflow-y: scroll;
+    scroll-behavior: auto;
+    height: 100vh;
+    .item-test{
+        background-color: $background-message-box;
+        border-radius: .3rem;
+        margin: 2rem;
+        max-height: 200px;
+        min-height: 50px;
+        padding: 1rem;
+    }
+}
