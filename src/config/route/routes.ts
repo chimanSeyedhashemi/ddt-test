@@ -4,5 +4,6 @@ export enum EROUT {
     USERS = "/users",
     SEARCH= "/search",
     PROFILE = "/profile",
-    TODO = "/todo"
+    TODO = "/todo",
+    MESSAGE= "/message"
 }

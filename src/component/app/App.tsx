@@ -11,7 +11,7 @@ const appRoutes = (
       <Route exact path={EROUT.MAIN} component={() => <Redirect to={EROUT.USERS} />} />
       <RouteLayoutValidUser exact path={EROUT.USERS} />
       <RouteLayoutValidUser exact path={EROUT.SEARCH} />
-      <RouteLayoutValidUser exact path={EROUT.TODO} />
+      <RouteLayoutValidUser exact path={EROUT.MESSAGE} />
       <RouteLayoutValidUser exact path={EROUT.PROFILE} />
       <RouteGeneral path={EROUT.LOGIN} component={Login} />
       <RouteLayoutValidUser />

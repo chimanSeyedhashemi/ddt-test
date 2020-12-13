@@ -33,8 +33,8 @@ export class AppRoute {
       icon: "fa fa-search-o",
     },
     {
-      path: EROUT.TODO,
-      name: "todo",
+      path: EROUT.MESSAGE,
+      name: "Message",
       icon: "fa fa-link",
       sidebarVisible: true,
     },

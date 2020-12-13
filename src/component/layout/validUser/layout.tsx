@@ -7,16 +7,16 @@ import { RouteLayoutMain } from './routeLayputMain';
 import { Users } from '../../pages/users/users';
 import { IReduxState } from '../../../redux/appState';
 import { IUser } from '../../../model/model.user';
-import { Todo } from '../../pages/todo/todo';
 import { Search } from '../../pages/search/search';
 import { Profile } from '../../pages/profile/profile';
+import { MessageList } from '../../pages/message/message';
 
 const appValidUserRoutes = (
     <HashRouter>
         <Switch>
             <Route exact path={EROUT.MAIN} component={() => <Redirect to={EROUT.USERS} />} />
             <RouteLayoutMain exact path={EROUT.USERS} component={Users} />
-            <RouteLayoutMain exact path={EROUT.TODO} component={Todo} />
+            <RouteLayoutMain exact path={EROUT.MESSAGE} component={MessageList} />
             <RouteLayoutMain exact path={EROUT.SEARCH} component={Search} />
             <RouteLayoutMain exact path={EROUT.PROFILE} component={Profile} />
         </Switch>
