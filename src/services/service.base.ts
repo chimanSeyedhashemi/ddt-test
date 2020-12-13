@@ -1,7 +1,6 @@
 import axios, { AxiosInstance, AxiosRequestConfig, CancelTokenSource } from "axios";
 import { Setup } from "../config/setup";
 import { IToken } from "../model/model.token";
-import { IUser } from "../model/model.user";
 import { action_set_token } from "../redux/action/token";
 import { Store2 } from "../redux/store";
 import { Utility } from "../script/utility";
